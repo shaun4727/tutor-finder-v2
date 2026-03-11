@@ -11,6 +11,7 @@ import {
 import { useIsMobile } from '@/hooks/use-mobile';
 import { TextAlignJustify } from 'lucide-react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const NavbarPage = () => {
     const mobile = useIsMobile();
@@ -43,22 +44,22 @@ const NavbarPage = () => {
                             <nav className="px-4 mt-10">
                                 <ul className="flex flex-col gap-2">
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        Home
+                                        <Link href="/">Home</Link>
                                     </li>
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        About Us
+                                        <Link href="/about">About Us</Link>
                                     </li>
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        Tutors
+                                        <Link href="/tutors">Tutors</Link>
                                     </li>
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        Faq
+                                        <Link href="/faq">Faq</Link>
                                     </li>
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        Login
+                                        <Link href="/login">Login</Link>
                                     </li>
                                     <li className="p-2 transition-colors hover:bg-theme-hover cursor-pointer">
-                                        Register
+                                        <Link href="/register">Register</Link>
                                     </li>
                                 </ul>
                             </nav>
@@ -76,22 +77,22 @@ const NavbarPage = () => {
                     />
                     <ul className="flex gap-4 text-white items-center font-montserrat">
                         <li className="py-2 px-6 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            Home
+                            <Link href="/">Home</Link>
                         </li>
                         <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            About Us
+                            <Link href="/about">About Us</Link>
                         </li>
                         <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            Tutors
+                            <Link href="/tutors">Tutors</Link>
                         </li>
                         <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            Faq
+                            <Link href="/faq">Faq</Link>
                         </li>
                         <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            Login
+                            <Link href="/login">Login</Link>
                         </li>
                         <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            Register
+                            <Link href="/register">Register</Link>
                         </li>
                     </ul>
                 </nav>
