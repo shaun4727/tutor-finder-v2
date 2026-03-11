@@ -1,11 +1,13 @@
+import { TooltipProvider } from '@/components/ui/tooltip';
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Montserrat } from 'next/font/google';
+import { Geist_Mono, Inter, Montserrat } from 'next/font/google';
 import { Toaster } from 'sonner';
 import './globals.css';
 
-const geistSans = Geist({
-    variable: '--font-geist-sans',
+const interSans = Inter({
+    variable: '--font-inter',
     subsets: ['latin'],
+    weight: ['400', '500', '600'],
 });
 
 const montserrat = Montserrat({
@@ -32,10 +34,10 @@ export default function RootLayout({
     return (
         <html lang="en">
             <body
-                className={`${geistSans.variable} ${geistMono.variable} antialiased ${montserrat.variable}`}
+                className={`${interSans.variable} ${geistMono.variable} antialiased ${montserrat.variable}`}
             >
                 <Toaster />
-                {children}
+                <TooltipProvider>{children}</TooltipProvider>
             </body>
         </html>
     );

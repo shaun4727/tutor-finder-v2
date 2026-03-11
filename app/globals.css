@@ -118,6 +118,10 @@
 
 @theme {
     --color-theme-blue: #0466c8;
+    --color-theme-color: #002855;
+    --color-theme-hover: #50a2ff4a;
+    --font-montserrat: var(--font-montserrat);
+    --font-inter: var(--font-inter);
 }
 
 @layer base {
