@@ -34,7 +34,7 @@ const HeroSection = () => {
                         placeholder="Find Tutor by subject, grade or tutor name"
                         className="mt-3 font-inter text-base placeholder:font-inter placeholder:text-sm placeholder:text-gray-400 focus-visible:ring-0"
                     />
-                    <Button className="w-full mt-1 py-4 bg-theme-blue font-montserrat">
+                    <Button className="w-full mt-1 py-4 bg-theme-blue font-montserrat cursor-pointer">
                         <Search /> Find My Perfect Tutor
                     </Button>
                 </div>
