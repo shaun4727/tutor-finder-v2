@@ -41,8 +41,8 @@ const AboutUs = () => {
                 <h1 className="font-montserrat text-[2rem] font-bold">
                     Future Plans for Our Tutoring Platform
                 </h1>
-                <div className="flex justify-between mt-6">
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                <div className="md:flex md:justify-between mt-6">
+                    <div className="md:w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <Vault className="text-[#33415c]" />
                         </span>
@@ -58,7 +58,7 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <SquareAsterisk className="text-[#33415c]" />
                         </span>
@@ -75,8 +75,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between mt-6">
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                <div className="md:flex md:justify-between mt-6">
+                    <div className="md:w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <Laptop className="text-[#33415c]" />
                         </span>
@@ -91,7 +91,7 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <Brain className="text-[#33415c]" />
                         </span>
@@ -107,8 +107,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between mt-6">
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                <div className="md:flex md:justify-between mt-6">
+                    <div className="md:w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <LoaderPinwheel className="text-[#33415c]" />
                         </span>
@@ -123,7 +123,7 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <TabletSmartphone className="text-[#33415c]" />
                         </span>
@@ -139,8 +139,8 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </div>
-                <div className="flex justify-between mt-6">
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                <div className="md:flex md:justify-between mt-6">
+                    <div className="md:w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <HandFist className="text-[#33415c]" />
                         </span>
@@ -155,7 +155,7 @@ const AboutUs = () => {
                             </p>
                         </div>
                     </div>
-                    <div className="w-1/2 flex justify-start gap-4 rounded-lg pr-4 ">
+                    <div className="md:w-1/2 mt-6 md:mt-0 flex justify-start gap-4 rounded-lg pr-4 ">
                         <span className="1/4 pt-1.5">
                             <GraduationCap className="text-[#33415c]" />
                         </span>
