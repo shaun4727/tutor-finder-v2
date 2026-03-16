@@ -23,7 +23,7 @@ const NavbarPage = () => {
                 <div>
                     <Drawer direction="right">
                         <DrawerTrigger asChild>
-                            <Button className="rounded-none bg-theme-color">
+                            <Button className="rounded-none bg-transparent text-black">
                                 <TextAlignJustify />
                             </Button>
                         </DrawerTrigger>

@@ -25,7 +25,7 @@ const HeroSection = () => {
                                 Online
                             </TabsTrigger>
 
-                            <TabsTrigger value="settings" className="py-4">
+                            <TabsTrigger value="settings" className="py-4" disabled>
                                 In-Person
                             </TabsTrigger>
                         </TabsList>

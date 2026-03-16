@@ -74,7 +74,7 @@ const page = () => {
         <div className="px-4 flex flex-col justify-center h-full mt-32 items-center gap-4 md:mt-12">
             <div className="flex flex-col items-center">
                 <Image
-                    src={`/images/t-high-resolution-logo-transparent.png`}
+                    src={`/images/logo.svg`}
                     width="100"
                     height="100"
                     alt="logo"

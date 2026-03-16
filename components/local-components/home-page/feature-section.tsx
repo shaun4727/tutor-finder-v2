@@ -2,7 +2,7 @@ import { Calendar, Shield, Users } from 'lucide-react';
 
 const FeatureSection = () => {
     return (
-        <div className="px-4 md:px-36 py-16 flex flex-col gap-16 md:flex-row md:justify-between">
+        <div className="px-4 md:px-36 py-16 flex flex-col gap-6 md:gap-16 md:flex-row md:justify-between">
             <div className="flex flex-col justify-center items-center py-4 px-8">
                 <Shield className="text-theme-blue" size={48} />
                 <h1 className="font-montserrat text-[2rem] font-bold text-center">
