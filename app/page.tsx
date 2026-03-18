@@ -1,3 +1,4 @@
+import ContactSection from '@/components/local-components/home-page/contact-section';
 import FeatureSection from '@/components/local-components/home-page/feature-section';
 import HeroSection from '@/components/local-components/home-page/hero-section';
 import SolveStruggle from '@/components/local-components/home-page/solve-struggle';
@@ -13,6 +14,7 @@ export default function Home() {
             <FeatureSection />
             <SolveStruggle />
             <TopTutor />
+            <ContactSection />
             <FooterSection />
         </div>
     );

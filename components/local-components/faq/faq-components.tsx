@@ -4,7 +4,7 @@ import { ChevronDownIcon } from 'lucide-react';
 
 const FaqComponent = () => {
     return (
-        <div className="px-4 md:px-36 flex flex-col md:flex-row gap-8 md:gap-0 md:justify-between md:items-center py-4">
+        <div className="px-4 md:px-36 flex flex-col md:flex-row gap-8 md:gap-0 md:justify-between md:items-center py-16">
             <div className="md:w-1/2 md:pr-6">
                 <h1 className="text-[.8rem] font-montserrat text-theme-blue">FAQ</h1>
                 <h1 className="text-[2rem] font-bold font-montserrat">

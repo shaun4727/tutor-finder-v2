@@ -8,6 +8,7 @@ import {
     TabletSmartphone,
     Vault,
 } from 'lucide-react';
+import OurTeamSection from './our-team-section';
 
 const AboutUs = () => {
     return (
@@ -37,6 +38,7 @@ const AboutUs = () => {
                     environment that empowers them to reach their full potential.
                 </p>
             </div>
+            <OurTeamSection />
             <div className="mt-8 font-inter">
                 <h1 className="font-montserrat text-[2rem] font-bold">
                     Future Plans for Our Tutoring Platform

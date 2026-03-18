@@ -76,11 +76,11 @@ const PriceRangeSlider = ({
         <div className="w-full flex items-center justify-center flex-col space-y-16">
             {/* Display the min and max values */}
             <div className="w-75 px-4 flex items-center justify-between gap-x-5">
-                <p className="text-xl text-neutral-100 font-semibold">
+                <p className="text-xl text-black font-semibold">
                     {currency} {minVal}
                 </p>
                 <div className="flex-1 border-dashed border border-neutral-500 mt-1"></div>
-                <p className="text-xl text-neutral-100 font-semibold">
+                <p className="text-xl text-black font-semibold">
                     {currency} {maxVal}
                 </p>
             </div>

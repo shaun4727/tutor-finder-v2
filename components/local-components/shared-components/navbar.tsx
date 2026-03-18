@@ -76,23 +76,53 @@ const NavbarPage = () => {
                         className="w-6 h-10"
                     />
                     <ul className="flex gap-4 text-white items-center font-montserrat">
-                        <li className="py-2 px-6 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/">Home</Link>
+                        <li>
+                            <Link
+                                className="py-2 px-6 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                                href="/"
+                            >
+                                Home
+                            </Link>
                         </li>
-                        <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/about">About Us</Link>
+                        <li>
+                            <Link
+                                href="/about"
+                                className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                            >
+                                About Us
+                            </Link>
                         </li>
-                        <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/tutors">Tutors</Link>
+                        <li>
+                            <Link
+                                href="/tutors"
+                                className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                            >
+                                Tutors
+                            </Link>
                         </li>
-                        <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/faq">Faq</Link>
+                        <li>
+                            <Link
+                                href="/faq"
+                                className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                            >
+                                Faq
+                            </Link>
                         </li>
-                        <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/login">Login</Link>
+                        <li>
+                            <Link
+                                href="/login"
+                                className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                            >
+                                Login
+                            </Link>
                         </li>
-                        <li className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer">
-                            <Link href="/register">Register</Link>
+                        <li>
+                            <Link
+                                href="/register"
+                                className="py-2 px-4 rounded-md transition-colors duration-500 ease-in-out hover:bg-theme-blue cursor-pointer"
+                            >
+                                Register
+                            </Link>
                         </li>
                     </ul>
                 </nav>
