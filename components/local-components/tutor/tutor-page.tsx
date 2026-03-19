@@ -3,7 +3,6 @@
 import PriceRangeSlider from '@/components/custom-ui/price-range-slider';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
 import {
     Drawer,
     DrawerContent,
@@ -20,10 +19,17 @@ import {
     DropdownMenuSeparator,
     DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-import { Field, FieldGroup } from '@/components/ui/field';
 import { Input } from '@/components/ui/input';
-import { Label } from '@/components/ui/label';
-import { ChevronDown, Search, SlidersHorizontal } from 'lucide-react';
+import {
+    Select,
+    SelectContent,
+    SelectGroup,
+    SelectItem,
+    SelectLabel,
+    SelectTrigger,
+    SelectValue,
+} from '@/components/ui/select';
+import { ChevronDown, Search, SlidersHorizontal, Star } from 'lucide-react';
 import { useState } from 'react';
 import TutorCard from './tutor-card';
 
@@ -61,38 +67,46 @@ const TutorPage = () => {
                                 <DrawerHeader>
                                     <DrawerTitle>Filter Area</DrawerTitle>
                                 </DrawerHeader>
-                                <div className="no-scrollbar overflow-y-auto px-4">
-                                    <h1 className="text-xl font-bold">Subjects</h1>
-                                    <FieldGroup className="">
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">Mathematics</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">Physics</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">Chemistry</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">Biology</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">English</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">History</Label>
-                                        </Field>
-                                        <Field orientation="horizontal">
-                                            <Checkbox id="terms-checkbox" name="terms-checkbox" />
-                                            <Label htmlFor="terms-checkbox">Computer Science</Label>
-                                        </Field>
-                                    </FieldGroup>
+                                <div className="no-scrollbar overflow-y-auto px-4 font-inter">
+                                    <h1 className="p-1">Subject</h1>
+                                    <Select>
+                                        <SelectTrigger className="w-full max-w-48">
+                                            <SelectValue placeholder="Select a Subject" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectGroup>
+                                                <SelectLabel>Select a Subject</SelectLabel>
+                                                <SelectItem value="apple">Apple</SelectItem>
+                                                <SelectItem value="banana">Banana</SelectItem>
+                                                <SelectItem value="blueberry">Blueberry</SelectItem>
+                                                <SelectItem value="grapes">Grapes</SelectItem>
+                                                <SelectItem value="pineapple">Pineapple</SelectItem>
+                                            </SelectGroup>
+                                        </SelectContent>
+                                    </Select>
+                                    <h1 className="p-1">Class</h1>
+                                    <Select>
+                                        <SelectTrigger className="w-full max-w-48">
+                                            <SelectValue placeholder="Select a Class" />
+                                        </SelectTrigger>
+                                        <SelectContent>
+                                            <SelectGroup>
+                                                <SelectLabel>Select a Class</SelectLabel>
+                                                <SelectItem value="apple">Apple</SelectItem>
+                                                <SelectItem value="banana">Banana</SelectItem>
+                                                <SelectItem value="blueberry">Blueberry</SelectItem>
+                                                <SelectItem value="grapes">Grapes</SelectItem>
+                                                <SelectItem value="pineapple">Pineapple</SelectItem>
+                                            </SelectGroup>
+                                        </SelectContent>
+                                    </Select>
+
+                                    <div>
+                                        <h1>Rating</h1>
+                                        <div>
+                                            <Star />
+                                        </div>
+                                    </div>
                                     <PriceRangeSlider
                                         min={200}
                                         max={1000}

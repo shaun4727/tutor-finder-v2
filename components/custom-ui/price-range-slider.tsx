@@ -3,34 +3,21 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 import './price-range-slider.css';
 
-const cssValues = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    zIndex: 1,
-    gap: '2px',
-    paddingTop: '10px',
-};
-
 interface PriceRangeSliderProps {
     min: number;
     max: number;
     onChange: (value: { min: number; max: number }) => void;
-    trackColor?: string;
     rangeColor?: string;
-    width?: number;
+    width?: string | number;
     currency?: string;
-    // valueStyle?: any; // Add type for cssValues
 }
 
 const PriceRangeSlider = ({
     min,
     max,
-    trackColor = '#cecece',
     onChange,
-    rangeColor = '#ff0303',
-    // valueStyle = cssValues,
-    width = 300,
+    rangeColor = '#0466c8',
+    width = '70%',
     currency = 'BDT',
 }: PriceRangeSliderProps) => {
     const [minVal, setMinVal] = useState(min);
@@ -64,28 +51,33 @@ const PriceRangeSlider = ({
     }, [maxVal, getPercent]);
 
     useEffect(() => {
-        if (minVal != minValRef.current || maxVal != maxValRef.current) {
+        if (minVal !== minValRef.current || maxVal !== maxValRef.current) {
             onChange({ min: minVal, max: maxVal });
-
             minValRef.current = minVal;
-            minValRef.current = maxVal;
+            maxValRef.current = maxVal;
         }
     }, [minVal, maxVal, onChange]);
 
     return (
-        <div className="w-full flex items-center justify-center flex-col space-y-16">
-            {/* Display the min and max values */}
-            <div className="w-75 px-4 flex items-center justify-between gap-x-5">
-                <p className="text-xl text-black font-semibold">
-                    {currency} {minVal}
-                </p>
-                <div className="flex-1 border-dashed border border-neutral-500 mt-1"></div>
-                <p className="text-xl text-black font-semibold">
-                    {currency} {maxVal}
-                </p>
+        <div className="slider-container" style={{ width }}>
+            {/* Minimalist Price Display */}
+            <div className="price-display">
+                <div className="price-box">
+                    <span>Min</span>
+                    <p>
+                        {currency} {minVal.toLocaleString()}
+                    </p>
+                </div>
+                <div className="price-divider" />
+                <div className="price-box text-right">
+                    <span>Max</span>
+                    <p>
+                        {currency} {maxVal.toLocaleString()}
+                    </p>
+                </div>
             </div>
-            {/* style the custom page range slider */}
-            <div className="price_range_slider" style={{ width }}>
+
+            <div className="price_range_slider">
                 <input
                     type="range"
                     min={min}
@@ -96,10 +88,6 @@ const PriceRangeSlider = ({
                         setMinVal(value);
                     }}
                     className="thumb thumb-left"
-                    style={{
-                        width,
-                        zIndex: minVal > max - 100 || minVal === maxVal ? 5 : undefined,
-                    }}
                 />
                 <input
                     type="range"
@@ -111,15 +99,15 @@ const PriceRangeSlider = ({
                         setMaxVal(value);
                     }}
                     className="thumb thumb-right"
-                    style={{
-                        width,
-                        zIndex: minVal > max - 100 || minVal === maxVal ? 4 : undefined,
-                    }}
                 />
 
                 <div className="slider">
-                    <div className="track-slider" style={{ backgroundColor: trackColor }} />
-                    <div className="range-slider" style={{ backgroundColor: rangeColor }} />
+                    <div className="track-slider" />
+                    <div
+                        ref={range}
+                        className="range-slider"
+                        style={{ backgroundColor: rangeColor }}
+                    />
                 </div>
             </div>
         </div>
